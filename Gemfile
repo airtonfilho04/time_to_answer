@@ -35,15 +35,14 @@ gem 'jbuilder', '~> 2.5'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
-
 # Devise is a flexible authentication solution for Rails based on Warden.
 gem 'devise'
-
 # Centralization of locale data collection for Ruby on Rails.
 gem 'rails-i18n', '~> 5.1'
-
 # A terminal spinner for tasks that have non-deterministic time frame.
 gem 'tty-spinner'
+# A library for generating fake data such as names, addresses, and phone numbers. 
+gem 'faker'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -57,6 +56,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'awesome_print'
 end
 
 group :test do
