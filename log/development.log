@@ -1988,3 +1988,128 @@ Processing by AdminsBackoffice::AdminsController#index as HTML
 Completed 200 OK in 60ms (Views: 55.1ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/admins_backoffice/admins/index" for 127.0.0.1 at 2020-05-30 14:35:52 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/airton/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by AdminsBackoffice::AdminsController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/airton/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/index.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/admins/index.html.erb within layouts/admins_backoffice (0.8ms)
+Completed 200 OK in 459ms (Views: 432.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/templates/startbootstrap-sb-admin-2/vendor/bootstrap/css/bootstrap.min.css.map" for 127.0.0.1 at 2020-05-30 14:52:26 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/templates/startbootstrap-sb-admin-2/vendor/bootstrap/css/bootstrap.min.css.map"):
+  
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/admins_backoffice/admins/index" for 127.0.0.1 at 2020-05-30 14:55:03 -0300
+Processing by AdminsBackoffice::AdminsController#index as HTML
+  [1m[36mAdmin Load (0.5ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/airton/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/index.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/admins/index.html.erb within layouts/admins_backoffice (0.9ms)
+Completed 200 OK in 94ms (Views: 87.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admins_backoffice/admins/index" for 127.0.0.1 at 2020-05-30 14:58:23 -0300
+Processing by AdminsBackoffice::AdminsController#index as HTML
+  [1m[36mAdmin Load (0.5ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/airton/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/index.html.erb within layouts/admins_backoffice
+  [1m[36mAdmin Load (0.5ms)[0m  [1m[34mSELECT "admins".* FROM "admins"[0m
+  ↳ app/views/admins_backoffice/admins/index.html.erb:11
+  Rendered admins_backoffice/admins/index.html.erb within layouts/admins_backoffice (3.8ms)
+Completed 200 OK in 93ms (Views: 85.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admins_backoffice/admins/index" for 127.0.0.1 at 2020-05-30 15:01:44 -0300
+Processing by AdminsBackoffice::AdminsController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/airton/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/index.html.erb within layouts/admins_backoffice
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT "admins".* FROM "admins"[0m
+  ↳ app/views/admins_backoffice/admins/index.html.erb:12
+  Rendered admins_backoffice/admins/index.html.erb within layouts/admins_backoffice (1.5ms)
+Completed 200 OK in 50ms (Views: 47.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2020-05-30 15:21:22 -0300
+Processing by Rails::InfoController#routes as HTML
+  Rendering /home/airton/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/railties-5.2.4.3/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /home/airton/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionpack-5.2.4.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb [41 times] (13.7ms)
+  Rendered /home/airton/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionpack-5.2.4.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /home/airton/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/railties-5.2.4.3/lib/rails/templates/rails/info/routes.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 24ms (Views: 22.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes?path=ad" for 127.0.0.1 at 2020-05-30 15:21:27 -0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"ad"}
+Completed 200 OK in 5ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes?path=admin" for 127.0.0.1 at 2020-05-30 15:21:29 -0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"admin"}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2020-05-30 15:21:57 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/airton/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::InfoController#routes as HTML
+  Rendering /home/airton/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/railties-5.2.4.3/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /home/airton/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionpack-5.2.4.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb [41 times] (16.0ms)
+  Rendered /home/airton/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionpack-5.2.4.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.4ms)
+  Rendered /home/airton/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/railties-5.2.4.3/lib/rails/templates/rails/info/routes.html.erb within layouts/application (26.3ms)
+Completed 200 OK in 33ms (Views: 30.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins_backoffice/welcome/index" for 127.0.0.1 at 2020-05-30 15:22:49 -0300
+Processing by AdminsBackoffice::WelcomeController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/airton/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/welcome/index.html.erb within layouts/admins_backoffice
+  Rendered admins_backoffice/welcome/index.html.erb within layouts/admins_backoffice (0.8ms)
+Completed 200 OK in 416ms (Views: 377.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/admins_backoffice/admins" for 127.0.0.1 at 2020-05-30 15:22:51 -0300
+Processing by AdminsBackoffice::AdminsController#index as HTML
+  [1m[36mAdmin Load (0.3ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/airton/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering admins_backoffice/admins/index.html.erb within layouts/admins_backoffice
+  [1m[36mAdmin Load (0.6ms)[0m  [1m[34mSELECT "admins".* FROM "admins"[0m
+  ↳ app/views/admins_backoffice/admins/index.html.erb:12
+  Rendered admins_backoffice/admins/index.html.erb within layouts/admins_backoffice (3.8ms)
+Completed 200 OK in 94ms (Views: 88.4ms | ActiveRecord: 0.9ms)
+
+
