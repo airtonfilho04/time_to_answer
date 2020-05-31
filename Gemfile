@@ -43,6 +43,9 @@ gem 'rails-i18n', '~> 5.1'
 gem 'tty-spinner'
 # A library for generating fake data such as names, addresses, and phone numbers. 
 gem 'faker'
+# A Scope & Engine based, clean, powerful, customizable and sophisticated paginator for Ruby webapps
+gem 'kaminari'
+gem 'kaminari-i18n'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
