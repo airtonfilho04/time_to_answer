@@ -46,6 +46,8 @@ gem 'faker'
 # A Scope & Engine based, clean, powerful, customizable and sophisticated paginator for Ruby webapps
 gem 'kaminari'
 gem 'kaminari-i18n'
+# Cocoon makes it easier to handle nested forms.
+gem 'cocoon'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -60,6 +62,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'awesome_print'
+  gem 'rails_db'
 end
 
 group :test do
