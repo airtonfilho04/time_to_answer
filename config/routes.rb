@@ -1,18 +1,22 @@
 Rails.application.routes.draw do
   devise_for :users
+  devise_for :admins
+  
   namespace :site do
     get 'welcome/index'
+    get 'search', to: 'search#questions'
   end
+  
   namespace :users_backoffice do
     get 'welcome/index'
   end
+  
   namespace :admins_backoffice do
     get 'welcome/index' # Dashboard
     resources :admins # Administradores
     resources :subjects # Assuntos
     resources :questions # Questões
   end
-  devise_for :admins
 
   get 'inicio', to: 'site/welcome#index'
 
